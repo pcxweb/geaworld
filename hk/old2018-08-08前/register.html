@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>GEA | HK</title>
+	<!-- 标题图标 -->
+    <link rel="icon" href="/geaGlobal/gea.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="/geaGlobal/css/public.css">
+	<link rel="stylesheet" href="/geaGlobal/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/geaGlobal/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="/geaGlobal/css/index.css">	
+	<link rel="stylesheet" href="/public/css/index.css">	
+	<link rel="stylesheet" href="/public/css/register.css">	
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+<![endif]-->
+</head>
+<body>
+<!-- 顶部 -->
+<div id="header-box">
+	<div class="nav-top">
+		<nav class="navbar container" id="nav-list" role="banner">
+			<div class="nav-box">
+				<div class="nav-img">
+					<a href="http://www.geaworld.org/" target="_blank"><img height="60" src="/geaGlobal/img/logowhite.png" alt=""></a>
+		        </div>
+		        <div class="nav-right">
+		        	<span class="fa fa-map-marker"></span>
+					<div class="select-address">
+						<div class="dropdown">
+						    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">GEA Hong Kong
+						        <span class="fa fa-angle-down"></span>
+						    </button>
+						    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						        <li role="presentation">
+						            <a role="menuitem" tabindex="-1" target="_blank" href="http://www.geaworld.org/">GEA Global</a>
+						        </li>
+						        <li role="presentation">
+						            <a role="menuitem" tabindex="-1" target="_blank" href="/mainland/">GEA Mainland</a>
+						        </li>
+						        <li role="presentation">
+						            <a role="menuitem" tabindex="-1" href="https://www.geaperth.com.au/" target="_blank">GEA AUS</a>
+						        </li>
+						        <li role="presentation">
+						            <a role="menuitem" tabindex="-1" href="/hk/">GEA Hong Kong</a>
+						        </li>
+						        <li role="presentation">
+						            <a role="menuitem" tabindex="-1" target="_blank" href="/Taiwan/">GEA Taiwan</a>
+						        </li>
+						    </ul>
+						</div>
+					</div>
+		        </div>
+		        <button id="btn-menu" type="button" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+	    </nav>
+    </div>
+	<div id="nav-menuId" class="nav-menu">
+		<div class="nav-menu-list container">
+			<ul>
+				<li><a href="/hk/about.html">關於我們</a></li>
+				<li><a href="/hk/index.html#school-event">海外院校</a></li>
+				<li><a href="/hk/index.html#school-event">升學活動</a></li>
+				<li><a href="/hk/index.html#footer">聯系我們</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="jia"></div>
+<!-- 注册内容 -->
+<div class="container" >
+	<div id="register">
+		<h3>Agent 註冊</h3> <!-- 需修改 -->
+		<form class="form-horizontal" id="agentform" action="/hkinterface/action-tran.jsp" enctype="multipart/form-data" method="post">
+			<div class="formitem line">
+			
+				<div class="inputbox">
+				
+					<label for="code" class="control-label"><span>*</span>賬號</label>
+							
+					<input type="text" class="inputItem" name="loginid" id="code" placeholder="賬號"><!-- 必填 -->
+				</div>
+				<div class="inputbox">
+					<label for="password" class="control-label"><span>*</span>密碼</label>
+					<input type="password" class="inputItem" name="password" id="password"><!-- 必填 -->
+				</div>
+				<div class="inputbox">
+					<label for="password2" class="control-label"><span>*</span>确认密碼</label>
+					<input type="password" class="inputItem" name="password2" id="password2"><!-- 必填 -->
+				</div>
+			</div>
+			<div class="formitem">
+			
+				<div class="inputbox">
+				
+					<label for="company-name" class="control-label"><span>*</span>公司名稱</label>
+							
+					<input type="text" class="inputItem" name="name" id="company-name" placeholder="公司名稱"><!-- 必填 -->
+				</div>
+				<div class="inputbox">
+				
+					<label for="companyEnname" class="control-label">英文名稱</label>
+							
+					<input type="text" class="inputItem" name="englishname" id="companyEnname" placeholder="英文名稱"><!-- 选填 -->
+				</div>
+			</div>
+			<div class="formitem line">
+				<div class="inputbox">
+					<label for="date" class="control-label"><span>*</span>預計簽約時間</label>
+					<input type="date" name="contract1_dead_date" id="date"><!-- 必填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="number" class="control-label"><span>*</span>目標人數</label>
+					<input type="number"  name="target" id="number"><!-- 必填 -->
+				</div>
+			</div>
+			<div class="formitem line">
+				
+				<div class="inputbox">
+					<label for="onepeople" class="control-label"><span>*</span>第壹負責人</label>
+					<input type="text" class="inputItem" name="inchargeman" id="onepeople" placeholder="第壹負責人"><!-- 必填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="phone1" class="control-label"><span>*</span>聯系電話</label>
+					<input type="text" class="inputItem" name="contact" id="phone1" placeholder="聯系電話"><!-- 必填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="email1" class="control-label" ><span>*</span>郵箱</label>
+					<input type="email" class="inputItem" name="email" id="email1" placeholder="郵箱"><!-- 必填 -->
+				</div>
+			</div>
+			<div class="formitem line">
+				
+				<div class="inputbox">
+					<label for="twopeople" class="control-label">第二負責人</label>
+					<input type="text" class="inputItem" name="inchargeman2" id="twopeople" placeholder="第壹負責人"><!-- 选填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="phone2" class="control-label">聯系電話</label>
+					<input type="text" class="inputItem" name="contact2" id="phone2" placeholder="聯系電話"><!-- 第二負責人有值必填/选填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="email2" class="control-label">郵箱</label>
+					<input type="email" class="inputItem" name="email2" id="email2" placeholder="郵箱"><!-- 第二負責人有值必填/选填 -->
+				</div>
+			</div>
+			<div class="formitem line">
+				<div class="inputbox">
+					<label for="file1" class="control-label">合作协议</label>
+					<input type="file" name="symbiosis" id="file1" placeholder="合作协议"><!-- 选填 -->
+				</div>
+			<!-- 	<div class="inputbox">
+					<label for="file2" class="control-label">签证服务协议</label>
+					<input type="file" name="file2" id="file2" placeholder="聯系電話">
+				</div> -->
+				<div class="inputbox">
+					<label for="file3" class="control-label">院校协议</label>
+					<input type="file" name="academy" id="file3" placeholder="郵箱"><!-- 选填 -->
+				</div>
+			</div>
+			<div class="formitem line">
+				
+				<div class="inputbox">
+					<label for="contactaddress" class="control-label"><span>*</span>聯系地址</label><!-- 必填 -->
+					<textarea name="address" id="contactaddress" class="inputItem" rows="3"></textarea>
+				</div>
+				
+				<div class="inputbox">
+					<label for="remark" class="control-label">備註</label><!-- 选填 -->
+					<textarea name="remark" id="remark" class="inputItem" rows="3"></textarea>
+				</div>
+			</div>
+		
+			<div class="title">
+				<p>銀行賬號信息：</p>
+				<div class="desc">（ 註：銀行和其支行需要分開寫！）</div>
+			</div>
+			<div class="formitem">
+				
+				<div class="inputbox">
+					<label for="bankicon" class="control-label">開戶銀行</label>
+					<input type="text" class="inputItem" name="bankname" id="bankicon" placeholder="開戶銀行"><!-- 选填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="banklink" class="control-label">銀行支行</label>
+					<input type="text" class="inputItem" name="bankname_chil" id="banklink" placeholder="銀行支行"><!--開戶銀行有值必填/选填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="bankname" class="control-label">賬戶名</label>
+					<input type="text" class="inputItem" name="accountname" id="bankname" placeholder="賬戶名"><!--開戶銀行有值必填/选填 -->
+				</div>
+			</div>
+			<div class="formitem line">
+				<div class="inputbox">
+					<label for="banknum" class="control-label">賬戶號碼</label>
+					<input type="text" class="inputItem" name="accountno" id="banknum" placeholder="賬戶號碼"><!--開戶銀行有值必填/选填 -->
+				</div>
+				
+				<div class="inputbox">
+					<label for="bankaddress" class="control-label">銀行地址</label>
+					<textarea name="bankaddress" id="bankaddress" class="inputItem" rows="3"></textarea><!--開戶銀行有值必填/选填 -->
+				</div>
+			</div>
+			<div class="formbtn formitem">
+			
+				<button type="button" class="btn btn-default" id="subBtn">註冊</button>
+			
+			</div>
+			<input type="hidden" name="update" value="agency">
+		</form>
+	</div>
+</div>
+<!-- 底部 -->
+<footer>
+	<div class="foot-top">
+		<div class="container">
+			<div class="col-xs-12">
+				<div class="foot-title">Connect with GEA</div>
+				<div class="foot-icon clearfix">
+					<ul class="clearfix">
+						<li><a href="https://m.facebook.com/wisdomglobaleducation/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+						<li><a href="https://www.instagram.com/wisdomglobaleducation/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="foot-title">LEARN MORE</div>
+					<div class="foot-menu nav-menu">
+						<ul>
+							<li><a href="/hk/about.html">關於我們</a></li>
+							<li><a href="/hk/index.html#school-event">海外院校</a></li>
+							<li><a href="/hk/index.html#school-event">升學活動</a></li>
+							<li><a href="/hk/index.html#footer">聯系我們</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 foot-menu">
+					<div class="foot-title">CONTACT US</div>
+					<p>Global Education Alliance</p>
+					<div class="foot-address">
+						<span class="fa fa-map-marker"></span>
+						<span>香港新界沙田安群街3號京瑞廣場1期15樓B室</span>  
+					</div>
+					<div class="foot-address">
+						<span class="fa fa-phone"></span>
+						<span>852-2110-3835</span>  
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+<script type="text/javascript" src="/geaGlobal/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/geaGlobal/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/geaGlobal/js/index.js"></script>
+<script type="text/javascript" src="/public/js/register.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// $("#nav-menuId").addClass("nav-menu-white")
+		var navListTop = $("#nav-list").height();
+		$(".jia").css("height",navListTop+30+"px");
+		var screenW = $(window).width();
+		if(screenW>1024){
+			$(".jia").css("height",navListTop+60+"px");
+		}
+	})
+
+</script>
+</html>

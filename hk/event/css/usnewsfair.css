@@ -1,0 +1,215 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 600px;
+  margin:0 auto;
+}
+body,html,#pagebox{
+	width: 100%;
+	height: 100%;
+
+}
+
+.bg{
+	width: 100%;
+	min-height: 100%;
+	background-image:url("/geaGlobal/img/event/eventbg.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color: rgb(16,50,151); /*#103297;*/
+}
+.bg>div{
+	margin-left:1rem;
+	margin-right:1rem;
+}
+.logotop{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.logotop img{
+	height: 40px;
+	width: auto;
+}
+.logotop .line{
+	margin:0 10px;
+	width: 2px;
+	height: 40px;
+	background-color: rgba(255,255,255,.6);
+}
+/*内容部分*/
+.bg{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.share{
+	display: flex;
+	justify-content: center;;
+	flex-direction: column;
+	color: #fff;
+	max-width: 80%;
+	margin-top:2.5rem;
+
+}
+.share ul li{
+	list-style: disc;
+}
+.share .share-title span{
+	display: inline-block;
+	padding:5px 8px;
+	background-color: #fdf9db;
+	border-radius: 4px;
+	color: #7f0b0f;
+	font-weight: bold;
+}	
+.share ul li i,.share ul li strong{
+	color: #f5e9c1;
+	font-weight: bold;
+	font-size: 2rem;
+}
+.share .desc{
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+}
+.title{
+	color: #ffffff;
+	text-align: center;
+	margin-top: 5rem;
+
+}
+.title p{
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+}
+.title h2{
+	margin-top: 0;
+	font-size: 2.4rem;
+	
+}
+.title h3{
+	margin-top: 30px;
+	font-size: 2.0rem;
+}
+.login{
+	color: #ffffff;
+	margin-top: 3rem;
+	text-align: center;
+}
+.login p{
+	font-size: 1.6rem;
+
+}
+.login .btnbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+.login .btnbox  a{
+	display: inline-block;
+	padding:0.8rem;
+	border:1px solid #ffffff;
+	color: #ffffff;
+	margin-left: 1.5rem;
+
+
+}
+.login .btnbox  a:hover{
+	color: #ff9800;
+	border-color: #ff9800;
+	text-decoration: none;
+}
+
+/*地址时间*/
+.address-time{
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+}
+.address-time div{
+	color: #fff;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+.address-time div.mapbox a{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	color: #fff;
+	text-decoration: none;
+}
+.address-time div.mapbox a p{
+	text-decoration: underline;
+}
+.address-time div i{
+	margin-right: 1rem;
+}
+.address-time div p{
+	margin-bottom: 0px;
+}
+
+/*第二页*/
+.page2{
+	width: 100%;
+	min-height: 100%;
+	background-image:url("/geaGlobal/img/event/eventbg2.jpg");
+	background-size: cover;
+	background-color: rgb(16,50,151); /*#103297*/
+
+}
+.page2 h4{
+	padding:10px;
+	margin:0;
+	color: #fff;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+}
+.page2 ul{
+	width: 90%;
+	margin:0 auto;
+	font-size: 1.2rem;
+	background-color: transparent;
+	color: #fff;
+}
+.page2 ul li{
+	padding:3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: ;
+}
+.page2 .mapwebbox{
+	padding:10px;
+	text-align: center;
+}
+
+
+@media (max-width: 360px) {
+	.title p{
+		font-size: 1.2rem;
+	}
+	.title h2{
+		font-size: 2rem;
+	}
+	.title h3{
+		font-size: 1.8rem;
+	}
+	.login p,.login .btnbox a,.address-time{
+		font-size: 1.4rem;
+	}
+	.page2 h4{
+		font-size: 1.6rem;
+	}
+	.login .btnbox a{
+		padding:0.6rem;
+	}
+	
+
+}
