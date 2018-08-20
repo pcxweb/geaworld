@@ -1,0 +1,390 @@
+
+/*内容部分*/
+	#about-con{
+		margin:0px;
+		background-color: #f2f2f2;
+	}
+	#about-con .con-box{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#about-con .con-box .aboutconbox-left{
+		position: relative;
+		top:-50px;
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		background-color: #fff;
+	}
+	#about-con .con-box .aboutconbox-right{
+		width: 20%;
+	}
+	#about-panel{width: 95%}
+	.panel-group .panel{
+		margin-bottom: 20px;
+	}
+	#about-con .panel-heading{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 0px;
+	}
+	#about-con .panel-danger>.panel-heading{
+		color: #fff;
+    	background-color: #ff9800;
+    	border-color: #ff9800;
+	}
+	#about-con .panel-danger>.panel-heading:hover{
+		background-color: #bd760c;
+	}
+	#about-con .panel-danger>.panel-heading .panel-title a{
+		font-size: 18px;
+		text-decoration: none;
+		font-family: 'BuenosAires-Bold','Passion One',"arial";
+	}
+	.about-right-title{
+		margin-top:20px;
+		font-size: 20px;
+		font-family: 'BuenosAires-Bold';
+	}
+	/*左侧导航*/
+	.about-con-nav{
+		padding-top:3%;
+		padding-left:4%;
+		font-size: 16px;
+		color: #4a484c;
+		cursor: pointer;
+	}
+	.about-con-nav  span{
+		padding-right: 10px;
+	}
+	.about-con-nav li span.fa{
+		display: none;
+	}
+	.about-con-nav li.active span.fa{
+		display: inline;
+	}
+	.about-con-nav h5{
+		font-size: 22px;
+		margin-left: -1.2em;
+		font-weight: bold;
+		border-top:1px solid #ccc;
+		padding-top: 8px;
+	}
+	.about-con-nav h5.active{
+		color: #ff9800;
+	}
+	.about-con-nav  li.active{
+		color:#ff9800;
+	}
+	.about-con-nav li{
+		width: 140px;
+		border-top:1px solid #ccc;
+		padding:10px;
+		font-size: 18px;
+		transition: all 0.3s linear
+	}
+	.about-con-nav li:last-child{
+		border-bottom: 1px solid #ccc;
+	}
+	.about-con-nav li .text{transition: all 0.3s linear}
+	.about-con-nav li:hover {
+		background-color: #e5e2e0;
+	}
+	.about-con-nav li:hover span.fa{
+		color: #000;
+	}
+	.about-con-nav li:hover .text{
+		margin-left: 10px;
+		color: #000;
+		font-weight: bold;
+	}
+	/*手机端上部导航*/
+	#app-about-nav{
+		text-align: right;
+		margin: 10px;
+		padding-bottom: 10px;
+    	border-bottom: 1px solid #ff9800;
+	}
+	#app-about-nav select{
+		border-radius: 5px;
+	    padding: 6px;
+	    border-color: #ff9800;
+	    font-weight: bold;
+	}
+
+	/*左侧内容*/
+	#about-con .about-con-left{
+		width: 80%;
+		background-color: #fff;
+		margin:3%;
+		margin-left: 2%;
+		padding-left: 2%;
+		border-left: 1px solid #ccc;
+		
+	}
+	#about-con .about-con-left .desc{
+		width: 90%;
+		margin-bottom: 40px;
+		font-size: 19px;
+		font-family: 'BuenosAires-Light', sans-serif; 
+	}
+	#about-panel .panel-heading h4{
+		font-family: 'BuenosAires-Bold';
+		font-size: 20px;
+	}
+	#about-panel .panel-body h4{
+		color: #ff9800;
+		font-family: 'BuenosAires-Bold','Passion One',"arial";
+	}
+	#about-panel .panel-body{
+		font-family: 'BuenosAires-Light', sans-serif; 
+		font-size: 16px;
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+	#about-panel .panel-body ul li:before{
+		/*content:"★";*/
+		content:"●";
+		color:#d85719;
+		font-size:1em;
+		margin-right: 0.5em;
+	}
+	#about-panel .img-job{
+		display: flex;
+		justify-content: flex-start;
+		align-items:center;
+		flex-wrap: wrap;
+	}
+	.img-job img{
+		width:30%;
+	}
+	#about-panel .img-job {
+		margin-left: 20px;
+		padding-top: 10px;
+	}
+	#about-panel .img-job  p{
+		font-weight: bold;
+		font-size: 16px;
+		font-family: 'BuenosAires-Bold'; 
+	}
+	.libox{display: none;transition: all 0.2s linear}
+	.liboxIn{display:block;}
+	.li_1 .about-panel-box .panel-body,.li_2 .about-panel-box .panel-body { border-bottom: 1px solid #ff9800;}
+	.li_1 .about-panel-box .panel-body:last-child,.li_2 .about-panel-box .panel-body:last-child{border-bottom: none}
+
+	/*右边内容*/
+	.about-con-right{
+		text-align: center;
+		margin-top: 70px;
+	}
+	.about-con-right .about-right-icon span{
+		color: #ff9800;
+		font-size: 5em;
+	}
+	.about-right-menu{
+		display: inline-block;
+		padding:0 36px;
+		font-family: 'BuenosAires-Light', sans-serif; 
+
+	}
+	.about-right-menu li{
+		margin-top: 20px;
+	}
+	.about-right-menu a{
+		color: #000;
+		display: inline-block;
+		text-decoration: none;
+	}
+	.about-right-menu a:hover,.about-right-menu a:focus{
+		text-decoration: none
+	}
+	.about-right-menu a .menu-title{
+		font-weight: bold;
+	}
+	.about-right-menu a .num{
+		font-size: 20px;
+	}
+
+
+
+/*内容部分结束*/
+	
+	/*正在改善内容部分开始*/
+		#market_position{
+			text-align: center;
+			overflow-x: auto;
+		}
+		#market_position .scrollbox{
+			width: 700px;
+			margin-bottom: 20px;
+		}
+		.panel-body a{
+			display:inline-block;
+			border:1px solid #ff9800;
+			color: #ff9800;
+			padding:6px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin-right: 8px;
+		}
+		#market_position a.maxMenu{
+			position: relative;
+		}
+		#market_position a.maxMenu:after{
+			content: "";
+			display: inline-block;
+			position: absolute;
+			height: 30px;
+			width: 1px;
+			bottom: -31px;
+			left:50%;
+			margin-left: -1px;
+			background-color: #000;
+		}
+		#market_position .second,#market_position .three{
+			margin-top: 30px;
+		}
+		#market_position .second>div,#market_position .three>div{
+			display: inline-block;
+			text-align: center;
+			padding-top:30px;
+			position: relative;
+		}
+		#market_position .three{
+			text-align: center;
+		}
+		#market_position .second>div:before,#market_position .three>div:before{
+			content: "";
+			position: absolute;
+			width: 80%;
+			height: 30px;
+			top:0;
+			left:50%;
+			margin-left: -40%;
+			background-color: #fff;
+			border:1px solid #000;
+			border-bottom: none;
+
+		}
+		#market_position .second a{
+			border:1px solid #3ea4e0;
+			color: #3ea4e0;
+		}
+		#market_position .three a{
+			border:1px solid #b959d8;
+			color: #b959d8;
+		}
+		#market_position .second .secondMenu:nth-child(2),#market_position .second .secondMenu:nth-child(3),#market_position .three a:nth-child(2){
+			position: relative;
+		}
+		#market_position .second .secondMenu:nth-child(2):before,#market_position .second .secondMenu:nth-child(3):before,#market_position .three a:nth-child(2):before{
+			content: "";
+			display: inline-block;
+			position: absolute;
+			width: 1px;
+			height: 30px;
+			left:50%;
+			top:-30px;
+			background-color: #000;
+		}
+		#market_position .second .secondMenu:nth-child(2):after{
+			content: "";
+			display: inline-block;
+			position: absolute;
+			width: 1px;
+			height: 30px;
+			left:50%;
+			bottom:-31px;
+			background-color: #000;
+		}
+		/*手机端样式*/
+		.panel-body .phone-one{
+			margin-bottom: 0px;
+		}
+		.panel-body .phone-two a{
+			border:1px solid #3ea4e0;
+			color: #3ea4e0;
+			margin-bottom: 10px;
+			position: relative;
+			
+		}
+		.panel-body .phone-three a{
+			border:1px solid #b959d8;
+			color: #b959d8;
+			margin-bottom: 10px;
+			position: relative;
+			
+		}
+		.panel-body .phone-two a:last-child,.panel-body .phone-three a:last-child{
+			margin-bottom: 0px;
+		}
+		.panel-body .phone-two{
+			padding-left: 40px;
+			margin-left: 20px;
+			padding-top: 15px;
+			position: relative;
+		}
+		.panel-body .phone-three{
+			margin-left: 80px;
+			padding-left: 40px;
+			padding-top: 15px;
+			position: relative;
+		}
+		.panel-body .phone-two:before,.panel-body .phone-three:before{
+			content: "";
+			display: inline-block;
+			width: 40px;
+			height: 90%;
+			position: absolute;
+			top:0;
+			left:0;
+			border-left: 1px solid #000;
+			border-bottom: 1px solid #000;
+		}
+		.panel-body .phone-two a:before,.panel-body .phone-three a:before{
+			position: absolute;
+			content: "";
+			width: 39px;
+			height: 1px;
+			background-color: #000;
+			top:50%;
+			margin-top: -0.5px;
+			left:-40px;
+		}
+		.panel-body .phone-two a:last-child:before,.panel-body .phone-three a:last-child:before{
+			display: none;
+		}
+		
+	/*正在改善内容部分结束*/
+	
+
+@media (max-width: 767px) {
+	#about-con .con-box .aboutconbox-left,#about-con .con-box .aboutconbox-right{
+		width: 100%;
+	}
+	#about-con .con-box .aboutconbox-left{
+		top:0;
+		flex-direction: column;
+	}
+	#about-con .about-con-left .desc{
+		width: 95%;
+		font-size: 16px;
+	}
+	.video_bnrsub{font-size:20px;}
+	.about-con-right{margin-top: 20px;margin-bottom: 20px;}
+	#about-panel .img-job{margin-left: 0}
+	/*visible-xs*/
+	#about-con .about-con-left{width: 100%;border-left: none}
+	#about-panel .img-job  p{font-size: 14px;}
+	
+
+}
+@media (min-width: 769px) {
+	#about-panel .img-job .job{margin-left: 20px;width: 65%}
+}
+@media (max-width: 1160px) and (min-width: 768px){
+	#about-con .about-con-left{
+		width: 70%;
+	}
+}
+
