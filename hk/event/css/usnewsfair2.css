@@ -106,7 +106,8 @@ p,h1,h2,h3,h4,h5,h6{
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 10px;
-	color: #54abcc
+	color: #54abcc;
+	font-family: "middleblack";
 }
 .content  .conitem{
 	margin:0 auto;
@@ -136,6 +137,7 @@ p,h1,h2,h3,h4,h5,h6{
 .content .base ul{
 	color: #fff;
 	padding:10px;
+	font-family: "middleblack";
 }
 .content .base ul li{
 	list-style: none;
