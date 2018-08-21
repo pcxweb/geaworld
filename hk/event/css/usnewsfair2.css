@@ -47,7 +47,8 @@ p,h1,h2,h3,h4,h5,h6{
 	background-image: url("/geaGlobal/img/event/topbg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
-	font-family: "bigblack"
+	font-family: "bigblack";
+	background-color: #1e4473;
 
 }
 .logotop{
@@ -98,6 +99,7 @@ p,h1,h2,h3,h4,h5,h6{
 	background-image: url("/geaGlobal/img/event/centerbg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
+	background-color: #1e4473;
 }
 .content .contitle{
 	display: flex;
@@ -182,6 +184,7 @@ p,h1,h2,h3,h4,h5,h6{
 	background-repeat: no-repeat;
 	padding-top: 1.29rem;
 	padding-bottom: 20px;
+	background-color: #1e4473;
 }
 .content .conitem{
 	display: flex;
