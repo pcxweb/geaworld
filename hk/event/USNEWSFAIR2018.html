@@ -2,164 +2,233 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
 	<!-- 标题图标 -->
-    <link rel="icon" href="/geaworld/gea.ico" type="image/x-icon">
+    <link rel="icon" href="/geaGlobal/gea.ico" type="image/x-icon">
 	<title>美國新聞國際教育博覽-香港站</title>
+	<link rel="stylesheet" href="/geaGlobal/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/geaGlobal/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script type="text/javascript">
+		(function(doc, win) {
+		    var docEl = doc.documentElement,
+		        isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+		        dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+		        dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+		        dpr = 1,
+		        scale = 1 / dpr,
+		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+		    docEl.dataset.dpr = dpr;
+		    var metaEl = doc.createElement('meta');
+		    metaEl.name = 'viewport';
+		    metaEl.content = 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale;
+		    docEl.firstElementChild.appendChild(metaEl);
+		    var recalc = function() {
+		        var width = docEl.clientWidth;
+		        if (width / dpr > 750) {
+		            width = 750 * dpr;
+		        }
+		        // 乘以100，px : rem = 100 : 1
+		        docEl.style.fontSize = 100 * (width / 750) + 'px';
+		    };
+		    recalc()
+		    if (!doc.addEventListener) return;
+		    win.addEventListener(resizeEvt, recalc, false);
+		})(document, window);
 
-	<link rel="stylesheet" href="/geaworld/geaGlobal/css/public.css">
-	<link rel="stylesheet" href="/geaworld/geaGlobal/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/geaworld/geaGlobal/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/usnewsfair.css">
+	</script>
+	<link rel="stylesheet" href="css/usnewsfair2.css">
+
 </head>
 <body>
-<div id="pagebox">
-	<div class="bg page1 section">
-		<header>
-			<div class="container" style="max-width: 600px;">
-				<div class="logotop">
-					<div class="usenew"><img src="/geaworld/geaGlobal/img/event/etslogo.png" alt=""></div>
-					<div class="line"></div>
-					<div class="gea"><img src="/geaworld/geaGlobal/img/cblogo2.png" alt=""></div>
-
-				</div>
-			</div>
-		</header>
-
-		
-		<div class="title">
+<div class="main">
+	<div class="top">
+		<div class="logotop">
+			<div class="usenew"><img src="/geaGlobal/img/event/etslogo.png" alt=""></div>
+			<div class="gea"><img src="/geaGlobal/img/cblogo2.png" alt=""></div>
+		</div>
+		<div class="titletop">
 			<p>U.S. News Global Education Fair - Hong Kong</p>
 			<h2>美國新聞國際教育博覽會</h2>
 			<h3>香港站</h3>
 		</div>
+	</div>
+	<div class="content">
+		<section class="base" id="base">
+			<div class="conitem">
+				<ul>
+					<li>
+						<i class="fa fa-users"></i>
+						<p>全港中學中四-中六學生及家長</p>
+					</li>
+					<li>
+						<a href="https://goo.gl/maps/UxjbwdKTgxL2"><i class="fa fa-map-marker"></i>
+						<p> 旺角上海街555號康得思酒店42 樓星愿亭<br>(旺角地鐵站E1出口朗豪坊對面)</p></a>
+					</li>
+					<li>
+						<i class="fa fa-calendar"></i>
+						<p>11月17日(星期六)</p>
+					</li>
+					<li>
+						<i class="fa fa-clock-o"></i>
+						<p>下午1:00-下午4:30</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="share" id="share">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">參加同學專享</span>
+				<span class="line right"></span>
+			</div>
+			<div class="conitem">
+				<ul>
+					<li>學科分析講解</li>
+					<li>成功報讀課程更有機會獲得由美國新聞國際教育送出的獎學金高達<strong>50,000</strong>美元*</li>
+					<li>以及獲得由<i>ETS HK</i>送出的<strong>來回美國機票</strong></li>
+				</ul>
+			</div>
+		</section>
+		<section class="college" id="college">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">大學資料</span>
+				<span class="line right"></span>
+			</div>
+			<div class="conitem">
+				<div>
+					<div class="img">
+						<img src="/geaGlobal/img/event/mapweb.png" alt="">
+					</div>
+					<ul>
+						<li>
+							<span>ADELPHI UNIVERSITY</span>
+						</li>
+						<li>
+							<span>ADELPHI UNIVERSITY</span>
+						</li>
+						<li>
+							<span>AUBURN UNIVERSITY</span>
+						</li>
+						<li>
+							<span>AUBURN UNIVERSITY AT MONTGOMERY</span>
+						</li>
+						<li>
+							<span>FLORIDA INTERNATIONAL UNIVERSITY</span>
+						</li>
+						<li>
+							<span>LOUISIANA STATE UNIVERSITY</span>
+						</li>
+						<li>
+							<span>UNIVERSITY OF CENTRAL FLORIDA</span>
+						</li>
+						<li>
+							<span>UNIVERSITY OF DAYTON</span>
+						</li>
+						<li>
+							<span>UNIVERSITY OF ILLINOIS AT CHICAGO</span>
+						</li>
+						<li>
+							<span>UNIVERSITY OF KANSAS</span>
+						</li>
+						<li>
+							<span>UNIVERSITY OF SOUTH CAROLINA</span>
+						</li>
+						<li>
+							<span>UNIVERSITY OF THE PACIFIC</span>
+						</li>
+						<li>
+							<span>SAN FRANCISCO STATE UNIVERSITY</span>
+						</li>
+						<li>
+							<span>BERKELEY COLLEGE</span>
+						</li>
+						<li>
+							<span>SACRED HEART UNIVERSITY</span>
+						</li>
 
-		<div class="login">
-			<p>立即網上登記!! <br>選取想參加的講座環節, 位置有限, 額滿即止!</p>
-			<div class="btnbox">
-				<a href="stu-register.html">學生登記</a>
-				<a href="guardian-register.html">家長登記</a>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="share">
-			<p class="share-title"><span>參加同學專享</span></p>
-			<ul>
-				<li>優先取錄機制</li>
-				<li>學科分析講解</li>
-				<li>成功報讀課程更有機會獲得<br>由美國新聞國際教育送出的獎學金<br>高達<strong>50,000</strong>美元*</li>
-				<li>以及獲得由<i>ETS HK</i>送出的<br><strong>來回美國機票</strong></li>
-			</ul>
-			<div class="desc">*GEA保留發放獎學金和機票的最終決定權</div>
-		</div>
-
-		<div class="address-time">
-			<div>
-				<i class="fa fa-users"></i>
-				<p>全港中學中四-中六學生及家長</p>
+		</section>
+		<section class="lecture" id="lecture">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">講座時間表</span>
+				<span class="line right"></span>
 			</div>
-			<div class="mapbox">
-				<a href="https://goo.gl/maps/UxjbwdKTgxL2"><i class="fa fa-map-marker"></i>
-				<p> 旺角上海街555號康得思酒店42 樓星愿亭<br>
-				 (旺角地鐵站E1出口朗豪坊對面)</p></a>
+			<div class="conitem">
+				<ol>
+					<li>關於美國新聞及其大學排名介紹</li>
+					<li>TOEFL 考試介紹</li>
+					<li>美國簽證介紹及注意事項</li>
+					<li>到美國留學校友分享經驗點滴</li>
+					<li>美國商會介紹畢業生在美國的出路</li>
+				</ol>
 			</div>
-			<div class="date">
-				<i class="fa fa-calendar"></i>
-				<p>11月17日(星期六)</p>
+		</section>
+		<section class="contactus" id="contactus">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">聯絡我們</span>
+				<span class="line right"></span>
 			</div>
-			<div class="time">
-				<i class="fa fa-clock-o"></i>
-				<p>下午1:00-下午4:30</p>
+			<div class="conitem">
+				<div>
+					<p>聯絡我們: Global Education Alliance</p>
+					<p>查詢熱線: 2110-3835</p>
+					<p><span class="fa fa-home"></span><a href=">http://www.geaworld.org/hk/">http://www.geaworld.org/hk/</a></p>
+					<p><span class="fa fa-facebook"></span>@Globaleducationalliance</p>
+				</div>
+				
 			</div>
-		</div>
+		</section>
 		
 	</div>
-	<div class="page2 section">
-		<h4>全美各地名牌大學代表親臨現場接受諮詢當中部分包括以下大學：</h4>
-		<ul>
-			<li class="liTitle" style="color: #ff9800;">
-				<span>University</span>
-				<span>State</span>
-			</li>
-			<li>
-				<span>ADELPHI UNIVERSITY</span>
-				<span>NEW YORK</span>
-			</li>
-			<li>
-				<span>ADELPHI UNIVERSITY</span>
-				<span>WASHINGTON, D. C.</span>
-			</li>
-			<li>
-				<span>AUBURN UNIVERSITY</span>
-				<span>ALABAMA</span>
-			</li>
-			<li>
-				<span>AUBURN UNIVERSITY AT MONTGOMERY</span>
-				<span>ALABAMA</span>
-			</li>
-			<li>
-				<span>FLORIDA INTERNATIONAL UNIVERSITY</span>
-				<span>FLORIDA</span>
-			</li>
-			<li>
-				<span>LOUISIANA STATE UNIVERSITY</span>
-				<span>LOUISIANA</span>
-			</li>
-			<li>
-				<span>UNIVERSITY OF CENTRAL FLORIDA</span>
-				<span>FLORIDA</span>
-			</li>
-			<li>
-				<span>UNIVERSITY OF DAYTON</span>
-				<span>OHIO</span>
-			</li>
-			<li>
-				<span>UNIVERSITY OF ILLINOIS AT CHICAGO</span>
-				<span>ILLINOIS</span>
-			</li>
-			<li>
-				<span>UNIVERSITY OF KANSAS (KU)</span>
-				<span>KANSAS</span>
-			</li>
-			<li>
-				<span>UNIVERSITY OF SOUTH CAROLINA</span>
-				<span>SOUTH CAROLINA</span>
-			</li>
-			<li>
-				<span>UNIVERSITY OF THE PACIFIC</span>
-				<span>CALIFORNIA</span>
-			</li>
-			<li>
-				<span>SAN FRANCISCO STATE UNIVERSITY</span>
-				<span>CALIFORNIA</span>
-			</li>
-			<li>
-				<span>BERKELEY COLLEGE</span>
-				<span>NEW YORK & NRW JERSEY</span>
-			</li>
-			<li>
-				<span>SACRED HEART UNIVERSITY</span>
-				<span>CONNECTICUT</span>
-			</li>
-
-		</ul>
-		<div class="mapwebbox" data-toggle="modal" data-target=".imgmodal">
-			<img src="/geaworld/geaGlobal/img/event/mapweb.png" width="80%" alt="">
+</div>
+<footer>
+		<div id="foot">
+			<ul>
+				<li style="border-right: 1px solid #013a71" class="menu loginmenu">
+					<a href="javascript:;">
+						<i class="fa fa-podcast"></i>
+						<span>展会登記</span>
+					</a>
+					<ul class="menu-left menu-list">
+						<li><a href="stu-register.html">学生登记</a></li>
+						<li><a href="guardian-register.html">家长登记</a></li>
+						
+					</ul>
+				</li>
+				<li class="menu infomenu">
+					<a href="javascript:;">
+						<i class="fa fa-bars"></i>
+						<span>展會資訊</span>
+					</a>
+					<ul class="menu-list menu-right">
+						<li><a href="#share">參加同學專享</a></li>
+						<li><a href="#college">大學資料</a></li>
+						<li><a href="#lecture">講座時間表</a></li>
+						<li><a href="#contactus">聯絡我們</a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
-	</div>
-</div>
-
-<div class="modal fade imgmodal"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document" >
-    <div class="modal-content" style="background-color: #103297;padding:20px;">
-      <img src="/geaworld/geaGlobal/img/event/mapweb.png" width="100%" alt="">
-    </div>
-  </div>
-</div>
-	
+	</footer>
 </body>
-<script type="text/javascript" src="/geaworld/geaGlobal/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/geaGlobal/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/geaworld/geaGlobal/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/geaGlobal/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-	
+	$(function(){
+		$(".infomenu").on('click',function(){
+			$(".menu-right").slideToggle();
+			$(".menu-left").slideUp()
+		})
+		$(".loginmenu").on('click',function(){
+			$(".menu-left").slideToggle();
+			$(".menu-right").slideUp()
+		})
+	})
 </script>
 </html>

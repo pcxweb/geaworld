@@ -1,0 +1,279 @@
+@font-face {
+	font-family: 'bigblack';
+	src: url('../fonts/bigblack.eot'),/*兼容eot*/
+	url('../fonts/bigblack.woff') format('woff'),/*火狐支持woff,woff2,opentype字体*/
+	url('../fonts/bigblack.ttf') format('truetype'),/*基于webkit内核支持truetype字体*/
+	url('../fonts/bigblack.svg') format('svg');
+}
+@font-face {
+	font-family: 'normalfont';
+	src: url('../fonts/normalfont.eot'),
+	url('../fonts/normalfont.woff') format('woff'),
+	url('../fonts/normalfont.ttf') format('truetype'),
+	url('../fonts/normalfont.svg') format('svg');
+	
+}
+@font-face {
+	font-family: 'middleblack';
+	src: url('../fonts/middleblack.eot'),
+	url('../fonts/middleblack.woff') format('woff'),
+	url('../fonts/middleblack.ttf') format('truetype'),
+	url('../fonts/middleblack.svg') format('svg');
+	
+}
+
+body{
+	font-family:'normalfont',Tahoma, Geneva, sans-serif;
+	color: #fff;
+}
+p,h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+}
+/*@media screen and (max-width:321px){
+    .main{font-size:15px}
+}
+
+@media screen and (min-width:321px) and (max-width:400px){
+    .main{font-size:16px}
+}
+
+@media screen and (min-width:400px){
+    .main{font-size:18px}
+}*/
+/*顶部样式*/
+.main .top{
+	width: 100%;
+	background-image: url("/geaGlobal/img/event/topbg.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	font-family: "bigblack"
+
+}
+.logotop{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 0.65rem;
+	padding-bottom: 1.05rem;
+	
+}
+.logotop .usenew{
+	padding-right: 0.1rem;
+	border-right: 1px solid rgba(255,255,255,.6);
+}
+.logotop .gea{
+	border-left: 1px solid rgba(255,255,255,.6);
+	padding-left: 0.1rem;
+}
+.logotop img{
+	height: 0.56rem;
+	width: auto;
+
+}
+.titletop{
+	color: #fff;
+	text-align: center;
+
+}
+.titletop p{
+	font-size: 0.2rem;
+}
+.titletop h2{
+	font-size: 0.5rem;
+	letter-spacing: 1.5px;
+}
+.titletop h3{
+	font-family: "middleblack";
+	font-size: 0.4rem;
+}
+.titletop h3{
+	margin-top: 0.59rem;
+	padding-bottom: 1.59rem;
+}
+/*中间内容样式*/
+.content{
+	width: 100%;
+	background-image: url("/geaGlobal/img/event/centerbg.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.content .contitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #54abcc
+}
+.content  .conitem{
+	margin:0 auto;
+	margin-bottom: 30px;
+
+}
+.content .contitle .txt{
+	font-size: 0.4rem;
+	font-family: "middleblack";
+}
+.content .contitle .line{
+	height: 3px;
+	width: 1.5rem;
+	margin:0 0.1rem;
+	background-color: #54abcc;
+	display: inline-block;
+	font-size: 0.3rem;
+}
+.content .base ul li{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.content .base ul li i{
+	display: inline-block;
+	color: #fff;
+	margin-right: 0.1rem;
+}
+.content .base ul li a{
+	display: flex;
+	align-items: center;
+	color: #fff;
+	
+}
+.content .base ul li a p{
+	text-decoration: underline;
+}
+.content .share ul li i{
+	font-size: 0.3rem;
+	font-family: "bigblack";
+	margin:0 3px;
+}
+.content .share ul li strong{
+	font-size: 0.4rem;
+	font-family: "bigblack";
+	color: #fff4d8;
+}
+.content .college .img{
+	text-align: center;
+}
+.content .college img{
+	width: 6.22rem;
+	max-width:800px;
+}
+.content .college ul{
+	margin-top: 20px;
+	font-size: 0.2rem;
+	font-family: "normalfont"
+}
+.content .college ul li{
+	list-style: none;
+	margin-bottom: 8px;
+}
+.content .lecture ol li{
+	margin-bottom: 10px;
+}
+.content .lecture .conitem{
+	margin-bottom: 0px;
+}
+.content  .contactus{
+	width: 100%;
+	background-image: url("/geaGlobal/img/event/bottombg.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	padding-top: 1.29rem;
+	padding-bottom: 20px;
+}
+.content .conitem{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.content  .contactus .conitem p{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.content  .contactus .conitem p a{
+	color: #fff;
+	text-decoration: underline;
+
+}
+.content  .contactus .conitem span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 100%;
+	background-color: #fff;
+	color: #000;
+	margin-right: 0.1rem;
+}
+
+/*底部样式*/
+#foot{
+	width: 100%;
+	position: fixed;
+	bottom:0px;
+	left:0;
+	height: 45px;
+	background-color: #b2daea;
+	color: #666;
+	line-height: 45px;
+	text-align: center;
+	border-top:1px solid #b2daea;
+}
+#foot ul{
+	padding-left: 0px;
+}
+#foot ul li{
+	list-style: none;
+}
+#foot>ul>li{
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	font-size: 16px
+}
+#foot>ul>li i{
+	color: #013a71;
+	font-size: 16px;
+}
+#foot>ul>li a{
+	color: #a91f23;
+	text-decoration: none;
+}
+#foot .menu .menu-list{
+	position: absolute;
+	bottom:45px;
+	right: 0;
+	width: 50%;
+	text-align: center;
+	height: 139px;
+	background-color: #b2daea;
+	display: none;
+}
+#foot .menu .menu-left{
+	position: absolute;
+	bottom:45px;
+	left: 0;
+	width: 50%;
+	text-align: center;
+	height: 69px;
+	background-color: #b2daea;
+	display: none;
+}
+
+#foot .menu .menu-list li{
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #54abcc;
+	cursor: pointer;
+}
+#foot .menu .menu-list a{
+	text-decoration: none;
+}
+#foot .menu .menu-list li:hover  a{
+	color: #013a71;
+}

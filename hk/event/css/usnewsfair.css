@@ -16,7 +16,7 @@ body,html,#pagebox{
 .bg{
 	width: 100%;
 	min-height: 100%;
-	background-image:url("/geaworld/geaGlobal/img/event/eventbg.jpg");
+	background-image:url("/geaGlobal/img/event/eventbg.jpg");
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-color: rgb(16,50,151); /*#103297;*/
@@ -159,7 +159,7 @@ body,html,#pagebox{
 .page2{
 	width: 100%;
 	min-height: 100%;
-	background-image:url("/geaworld/geaGlobal/img/event/eventbg2.jpg");
+	background-image:url("/geaGlobal/img/event/eventbg2.jpg");
 	background-size: cover;
 	background-color: rgb(16,50,151); /*#103297*/
 

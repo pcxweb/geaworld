@@ -8,12 +8,12 @@ body,html{
 	font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 	width: 100%;
 	min-height: 100%;
-	background-color: #ede7f6;
+	background-color: #b2daea;
 	position: relative;
 }
 .regbox .topbg{
 	height: 250px;
-	background-color: #673ab7;
+	background-color: #1e4473;
 }
 .regbox .info{
 	width: 640px;
@@ -25,14 +25,14 @@ body,html{
 	text-align: center;
 	padding:30px 15px;
 	padding-bottom: 0px;
-	border-top:5px solid rgb(179, 136, 255);
+	border-top:5px solid #b2daea;
 }
 .regbox .must-write{
 	padding:10px 15px;
 
 }
 .regbox .title{
-	background-color: #673ab7;
+	background-color: #1e4473;
 	padding:10px 15px;
 	color: #fff;
 }
