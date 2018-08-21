@@ -178,6 +178,11 @@ p,h1,h2,h3,h4,h5,h6{
 	font-size: 0.2rem;
 	text-align: center;
 }
+.content .college .collegedesc{
+	font-family: "normalfont";
+	margin-bottom: 20px;
+	font-size: 0.3rem;
+}
 .content .college .img{
 	text-align: center;
 }
