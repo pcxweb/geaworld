@@ -3,7 +3,7 @@
 /*顶部样式*/
 .main .top{
 	width: 100%;
-	background-image: url("/geaGlobal/img/event/topbg.png");
+	background-image: url("/geaworld/geaGlobal/img/event/topbg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	font-family: "bigblack";
@@ -55,7 +55,7 @@
 /*中间内容样式*/
 .content{
 	width: 100%;
-	background-image: url("/geaGlobal/img/event/centerbg.png");
+	background-image: url("/geaworld/geaGlobal/img/event/centerbg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	background-color: #1c4472
@@ -175,7 +175,7 @@
 }
 .content  .contactus{
 	width: 100%;
-	background-image: url("/geaGlobal/img/event/bottombg.png");
+	background-image: url("/geaworld/geaGlobal/img/event/bottombg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	padding-top: 1.29rem;
