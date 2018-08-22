@@ -172,7 +172,7 @@ p,h1,h2,h3,h4,h5,h6{
 	width: 2.3rem;
 	background-color: #fff;
 	padding:0 3px;
-	border-radius: 3px;
+	border-radius: 0.235rem;
 	margin:0 5px;
 }
 .content .share ul li strong{
