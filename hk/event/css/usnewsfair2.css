@@ -1,50 +1,9 @@
-@font-face {
-	font-family: 'bigblack';
-	src: url('../fonts/bigblack.eot'),/*兼容eot*/
-	url('../fonts/bigblack.woff') format('woff'),/*火狐支持woff,woff2,opentype字体*/
-	url('../fonts/bigblack.ttf') format('truetype'),/*基于webkit内核支持truetype字体*/
-	url('../fonts/bigblack.svg') format('svg');
-}
-@font-face {
-	font-family: 'normalfont';
-	src: url('../fonts/normalfont.eot'),
-	url('../fonts/normalfont.woff') format('woff'),
-	url('../fonts/normalfont.ttf') format('truetype'),
-	url('../fonts/normalfont.svg') format('svg');
-	
-}
-@font-face {
-	font-family: 'middleblack';
-	src: url('../fonts/middleblack.eot'),
-	url('../fonts/middleblack.woff') format('woff'),
-	url('../fonts/middleblack.ttf') format('truetype'),
-	url('../fonts/middleblack.svg') format('svg');
-	
-}
 
-body{
-	font-family:'normalfont',Tahoma, Geneva, sans-serif;
-	color: #fff;
-}
-p,h1,h2,h3,h4,h5,h6{
-	padding:0;
-	margin:0;
-}
-/*@media screen and (max-width:321px){
-    .main{font-size:15px}
-}
 
-@media screen and (min-width:321px) and (max-width:400px){
-    .main{font-size:16px}
-}
-
-@media screen and (min-width:400px){
-    .main{font-size:18px}
-}*/
 /*顶部样式*/
 .main .top{
 	width: 100%;
-	background-image: url("/geaworld/geaGlobal/img/event/topbg.png");
+	background-image: url("/geaGlobal/img/event/topbg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	font-family: "bigblack";
@@ -96,7 +55,7 @@ p,h1,h2,h3,h4,h5,h6{
 /*中间内容样式*/
 .content{
 	width: 100%;
-	background-image: url("/geaworld/geaGlobal/img/event/centerbg.png");
+	background-image: url("/geaGlobal/img/event/centerbg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	background-color: #1c4472
@@ -134,10 +93,11 @@ p,h1,h2,h3,h4,h5,h6{
 	box-shadow: 0 0 10px #fff;
 	
 }*/
+
 .content .base ul{
 	color: #fff;
 	padding:10px;
-	font-family: "middleblack";
+	font-family: "middleblack"
 }
 .content .base ul li{
 	list-style: none;
@@ -202,7 +162,6 @@ p,h1,h2,h3,h4,h5,h6{
 	font-size: 0.2rem;
 	font-family: "normalfont";
 	padding-left: 0;
-
 }
 .content .college ul li{
 	list-style: none;
@@ -216,7 +175,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .content  .contactus{
 	width: 100%;
-	background-image: url("/geaworld/geaGlobal/img/event/bottombg.png");
+	background-image: url("/geaGlobal/img/event/bottombg.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	padding-top: 1.29rem;
@@ -241,79 +200,13 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .content  .contactus .conitem span{
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 0.48rem;
+	height: 0.48rem;
 	text-align: center;
-	line-height: 20px;
+	line-height: 0.48rem;
 	border-radius: 100%;
 	background-color: #fff;
 	color: #000;
 	margin-right: 0.1rem;
 }
 
-/*底部样式*/
-#foot{
-	width: 100%;
-	position: fixed;
-	bottom:0px;
-	left:0;
-	height: 45px;
-	background-color: #b2daea;
-	color: #666;
-	line-height: 45px;
-	text-align: center;
-	border-top:1px solid #b2daea;
-}
-#foot ul{
-	padding-left: 0px;
-}
-#foot ul li{
-	list-style: none;
-}
-#foot>ul>li{
-	box-sizing: border-box;
-	float: left;
-	width: 50%;
-	font-size: 16px
-}
-#foot>ul>li i{
-	color: #013a71;
-	font-size: 16px;
-}
-#foot>ul>li a{
-	color: #a91f23;
-	text-decoration: none;
-}
-#foot .menu .menu-list{
-	position: absolute;
-	bottom:45px;
-	right: 0;
-	width: 50%;
-	text-align: center;
-	height: 139px;
-	background-color: #b2daea;
-	display: none;
-}
-#foot .menu .menu-left{
-	position: absolute;
-	bottom:45px;
-	left: 0;
-	width: 50%;
-	text-align: center;
-	height: 69px;
-	background-color: #b2daea;
-	display: none;
-}
-
-#foot .menu .menu-list li{
-	height: 35px;
-	line-height: 35px;
-	border-bottom: 1px solid #54abcc;
-	cursor: pointer;
-}
-#foot .menu .menu-list a{
-	text-decoration: none;
-}
-#foot .menu .menu-list li:hover  a{
-	color: #013a71;
-}
