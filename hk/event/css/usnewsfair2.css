@@ -163,10 +163,17 @@ p,h1,h2,h3,h4,h5,h6{
 .content .base ul li a p{
 	text-decoration: underline;
 }
-.content .share ul li i{
+/*.content .share ul li i{
 	font-size: 0.3rem;
 	font-family: "bigblack";
 	margin:0 3px;
+}*/
+.content .share ul li img{
+	width: 2.3rem;
+	background-color: #fff;
+	padding:0 3px;
+	border-radius: 3px;
+	margin:0 5px;
 }
 .content .share ul li strong{
 	font-size: 0.4rem;
@@ -193,7 +200,9 @@ p,h1,h2,h3,h4,h5,h6{
 .content .college ul{
 	margin-top: 20px;
 	font-size: 0.2rem;
-	font-family: "normalfont"
+	font-family: "normalfont";
+	padding-left: 0;
+
 }
 .content .college ul li{
 	list-style: none;
