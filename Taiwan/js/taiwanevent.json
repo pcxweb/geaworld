@@ -1,0 +1,32 @@
+{
+	"schoolOne":[
+		{
+			"id":1,
+			"img":["one1-1.jpg","one1-2.jpg","one1-3.jpg"],
+			"title":"Agents Workshops",
+			"date":"2018年3月12日星期一",
+			"address":"Amerigo Education Agent Workshop",
+			"day":12,
+			"month":"Mar"
+		},
+		{
+			"id":2,
+			"img":["one2-1.jpg","one2-2.jpg","one2-3.jpg"],
+			"title":"TUtah & Dayton Taiwan Launch",
+			"date":"2018年2月26日星期一",
+			"address":"Shorelight Education 5-Year Anniversary",
+			"day":26,
+			"month":"Feb"
+		},
+		{
+			"id":3,
+			"img":["one3-1.jpg","one3-2.jpg","one3-3.jpg"],
+			"title":"Agents Workshops",
+			"date":"2017年10月12日星期四",
+			"address":"Shorelight Education Agent Workshop",
+			"day":12,
+			"month":"Oct"
+		}
+	]
+	
+}

@@ -1,0 +1,217 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>index</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="css/demo.css"> -->
+    <style>
+    /*https://blog.csdn.net/qq_39366219/article/details/78452443*/
+    body{
+        margin:0;
+        padding:0;
+    }
+    .wrap{
+        margin:30px auto;
+        border:1px solid;
+        width:500px;
+    }
+    .flex_row{
+        padding:0;
+        display:flex;
+        flex-direction:row;
+        list-style:none;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .flex_row li{
+        border:1px solid;
+        width:40px;
+        height:40px;
+        text-align:center;
+        font-weight:bold;
+        line-height:40px;
+        cursor:pointer;
+    }
+    .itemsflex_row{
+        position:relative;
+        color:#000;
+        text-decoration:none;
+        margin:0;
+        padding:10px 0;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-around;
+        border-bottom:1px solid gray;
+    }
+    .ft{
+    /* position:absolute;
+    right:16px;
+    top:16px; */
+    }
+    .img{
+        width:50px;
+        height:45px;
+
+
+    }
+    .img img{
+        width:45px;
+        height:45px;
+    }
+    .bd{
+        width:380px;
+        height:19px;
+    }
+    .bd p{
+        margin:0;
+        padding:0;
+        width:78%;
+        height:18px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap flex_column">
+        <div class="content flex_column">
+
+        </div>
+        <div class="page">
+            <ul class="flex_row">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+/*
+const 常量
+addEventListener('click', pageList, false); 事件监听
+
+
+toLowerCase 转小写
+if(a in b){ }
+for in ;  array.push()
+将数组转成字符串 array.join
+字符串转json对象 JSON.parse
+str 
+    `
+<a href="${data[i].url}" class="itemsflex_row load">
+<div class="img">
+<img src="${data[i].picUrl}" alt=""/>
+</div>
+</a>
+`
+div.innerHTML=str 将字符串写入div
+console.time('正在拉取数据');  console.timeEnd('正在拉取数据');
+*/
+
+
+
+
+
+//常量
+const url='https://route.showapi.com/181-1?';
+//获取div
+var oCon=document.querySelector('.content'); //返回匹配的第一个元素,数据box
+var oUl=document.querySelector('.flex_row'); //ul
+
+
+var page=1;//初始化页码
+var cache={};//缓存池
+
+
+//添加点击事件监听
+oUl=addEventListener('click', pageList, false);
+
+
+//获取每页的数据
+function pageList(e){
+    if(e.target.nodeName.toLowerCase()==='li'){
+        //点击获取对应的源码 1,2,3...
+        page=e.target.innerHTML*1;
+        //判断json中是否有该页缓存了
+        if(page in cache){
+            console.log('数据已经缓存了，页码：'+page);
+            console.log(cache)
+            //直接渲染数据组件
+            showPage(cache[page]);
+        }else{
+            getJson();//获取数据
+        }
+    }
+}
+
+
+//获取数据
+getJson();
+function getJson(){
+    console.time('正在拉取数据');
+    //获得数组
+    var params=[];
+    //创建Ajax对象
+    var xhr=new XMLHttpRequest();
+    var sendData={
+        'showapi_appid':'30603',//账号
+        'showapi_sign':'98960666afeb4992ae91971d13494090',//密码
+        'page':page,//第几页数据
+        'num':8//几条数据
+    }
+
+
+    //json转数组
+    for(key in sendData){
+        params.push(key+'='+sendData[key]);
+    }
+    //将数组转成字符串
+    var postData=params.join('&');
+
+
+    xhr.open('GET',url+postData,true);
+    xhr.send(null)
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4&&xhr.status==200){
+            //获得json数据
+            var dataList=JSON.parse(xhr.response).showapi_res_body.newslist;
+            cache[page]=dataList;//缓存数据
+            showPage(dataList);//调用渲染数据
+        }
+    } 
+}
+
+
+//数据渲染组件
+function showPage(data){
+    var len=data.length;//长度预存
+    var str='';//初始化模板
+    for(var i=0;i<len;i++){
+        str+=
+        `
+        <a href="${data[i].url}" class="itemsflex_row load">
+        <div class="img">
+        <img src="${data[i].picUrl}" alt=""/>
+        </div>
+        <div class="bd">
+        <p class="label">${data[i].title}</p>
+        </div>
+        <div class="ft">&GT;</div>
+        </a>
+        `
+    }
+    oCon.innerHTML=str;//更改oCon的内容为str
+    console.timeEnd('正在拉取数据');
+    //停止一个通过 console.time() 启动的计时器
+    //需要停止的计时器名字。一旦停止，计时器所经过的时间会被自动输出到控制台。
+}
+</script>
+</body>
+
+
+</html>
