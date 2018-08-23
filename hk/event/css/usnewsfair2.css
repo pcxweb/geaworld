@@ -159,13 +159,20 @@
 }
 .content .college ul{
 	margin-top: 20px;
-	font-size: 0.2rem;
+	font-size: 0.25rem;
 	font-family: "normalfont";
 	padding-left: 0;
 }
 .content .college ul li{
 	list-style: none;
 	margin-bottom: 8px;
+}
+.content .college ul li a{
+	color: #fff;
+}
+.content .college ul li a i{
+	margin-right: 0.2rem;
+	color: #b2daea;
 }
 .content .lecture ol li{
 	margin-bottom: 10px;
