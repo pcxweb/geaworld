@@ -2,15 +2,238 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>美国新闻博览会</title>
-	<link rel="icon" href="/geaGlobal/gea.ico" type="image/x-icon">
-	<link rel="stylesheet" href="/geaGlobal/css/public.css">
-	<link rel="stylesheet" href="/geaGlobal/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/geaGlobal/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">	
-	<link rel="stylesheet" href="/geaGlobal/js/swiper4.3.3/css/swiper.min.css">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+	<!-- 标题图标 -->
+    <link rel="icon" href="/geaworld/gea.ico" type="image/x-icon">
+	<title>美國新聞國際教育博覽-台灣站</title>
+	<link rel="stylesheet" href="/geaworld/geaGlobal/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/geaworld/geaGlobal/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script type="text/javascript">
+		(function(doc, win) {
+		    var docEl = doc.documentElement,
+		        isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+		        dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+		        dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+		        dpr = 1,
+		        scale = 1 / dpr,
+		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+		    docEl.dataset.dpr = dpr;
+		    var metaEl = doc.createElement('meta');
+		    metaEl.name = 'viewport';
+		    metaEl.content = 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale;
+		    docEl.firstElementChild.appendChild(metaEl);
+		    var recalc = function() {
+		        var width = docEl.clientWidth;
+		        if (width / dpr > 750) {
+		            width = 750 * dpr;
+		        }
+		        // 乘以100，px : rem = 100 : 1
+		        docEl.style.fontSize = 100 * (width / 750) + 'px';
+		    };
+		    recalc()
+		    if (!doc.addEventListener) return;
+		    win.addEventListener(resizeEvt, recalc, false);
+		})(document, window);
+
+	</script>
+	<link rel="stylesheet" href="/geaworld/hk/event/css/event.css">
+	<link rel="stylesheet" href="/geaworld/hk/event/css/usnewsfair2.css">
 </head>
 <body>
-	3333
+<div class="main">
+	<div class="top">
+		<div class="logotop">
+			<div class="usenew"><img src="/geaworld/geaGlobal/img/cblogo2.png" alt=""></div>
+			<div class="gea"><img src="/geaworld/geaGlobal/img/event/etslogo.png" alt=""></div>
+		</div>
+		<div class="titletop">
+			<p>U.S. News Global Education Fair - Taiwan</p>
+			<h2>美國新聞國際教育博覽會</h2>
+			<h3>台灣站</h3>
+		</div>
+	</div>
+	<div class="content">
+		<section class="base" id="base">
+			<div class="conitem">
+				<ul>
+					<li>
+						<i class="fa fa-users"></i>
+						<p>國高中學生、大專院校生、以及對美國留學有興趣的社會大眾</p>
+					</li>
+					<li>
+						<a href="https://goo.gl/maps/NQbUu5TbZtK2"><i class="fa fa-map-marker"></i>
+						<p> 台北文創大樓6F<br>（台北市信義區菸廠路88號）</p></a>
+					</li>
+					<li>
+						<i class="fa fa-calendar"></i>
+						<p>2018/11/18（星期天）</p>
+					</li>
+					<li>
+						<i class="fa fa-clock-o"></i>
+						<p>下午一點至五點</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="share" id="share">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">參加同學專享</span>
+				<span class="line right"></span>
+			</div>
+			<div class="conitem">
+				<div>
+					<ul>
+						<li>優先取錄機制</li>
+						<li>學科分析講解</li>
+						<li>成功報讀課程更有機會獲得由美國新聞國際教育送出的獎學金高達<strong>50,000</strong>美元^</li>
+					</ul>
+					<p class="desc">^GEA保留發放獎學金和機票的最終決定權</p>
+				</div>
+			</div>
+		</section>
+		<section class="college" id="college">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">大學資料</span>
+				<span class="line right"></span>
+			</div>
+			<div class="conitem">
+				<div>
+					<div class="collegedesc">
+						<p>全美各地名牌大學代表親臨現場接受諮詢</p>
+						<p>當中部分包括以下大學:</p>
+					</div>
+					<div class="img">
+						<img src="/geaworld/geaGlobal/img/event/mapweb.png" alt="">
+					</div>
+					<ul>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u1"><i class="fa fa-link"></i><span>ADELPHI UNIVERSITY</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u2"><i class="fa fa-link"></i><span>AMERICAN UNIVERSITY</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u3"><i class="fa fa-link"></i><span>AUBURN UNIVERSITY</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u4"><i class="fa fa-link"></i><span>AUBURN UNIVERSITY AT MONTGOMERY</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u5"><i class="fa fa-link"></i><span>FLORIDA INTERNATIONAL UNIVERSITY</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u6"><i class="fa fa-link"></i><span>LOUISIANA STATE UNIVERSITY</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u7"><i class="fa fa-link"></i><span>UNIVERSITY OF CENTRAL FLORIDA</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u8"><i class="fa fa-link"></i><span>UNIVERSITY OF DAYTON</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u9"><i class="fa fa-link"></i><span>UNIVERSITY OF ILLINOIS AT CHICAGO</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u10"><i class="fa fa-link"></i><span>UNIVERSITY OF KANSAS</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u11"><i class="fa fa-link"></i><span>UNIVERSITY OF SOUTH CAROLINA</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u12"><i class="fa fa-link"></i><span>UNIVERSITY OF THE PACIFIC</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u13"><i class="fa fa-link"></i><span>SAN FRANCISCO STATE UNIVERSITY</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u14"><i class="fa fa-link"></i><span>BERKELEY COLLEGE</span></a>
+						</li>
+						<li>
+							<a href="/geaworld/hk/collegeinfo.html?name=u15"><i class="fa fa-link"></i><span>SACRED HEART UNIVERSITY</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="lecture" id="lecture">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">講座時間表</span>
+				<span class="line right"></span>
+			</div>
+			<div class="conitem">
+				<ol>
+					<li>2:00PM-3:00PM 孫其君演講</li>
+					<li>3:30PM-4:00PM 美國高中留學講座</li>
+					<li>4:30PM-5:00PM  ETS托福考試講座</li>
+				</ol>
+			</div>
+		</section>
+		<section class="contactus" id="contactus">
+			<div class="contitle">
+				<span class="line left"></span>
+				<span class="txt">聯絡我們</span>
+				<span class="line right"></span>
+			</div>
+			<div class="conitem">
+				<div>
+					<p>聯絡我們: Global Education Alliance</p>
+					<p>聯絡電話：（02）2701-7692</p>
+					<p>Email：taiwan@geaworld.org</p>
+					<p><span class="fa fa-home"></span><a href="http://www.geaworld.org/Taiwan/">http://www.geaworld.org/Taiwan/</a></p>
+					<p><span class="fa fa-facebook"></span><a href="https://www.facebook.com/Globaleducationalliance/">@Globaleducationalliance</a></p>
+				</div>
+				
+			</div>
+		</section>
+		
+	</div>
+</div>
+<footer>
+		<div id="foot">
+			<ul>
+				<li style="border-right: 1px solid #54abcc" class="menu loginmenu">
+					<a href="javascript:;">
+						<i class="fa fa-podcast"></i>
+						<span>展會登記</span>
+					</a>
+					<ul class="menu-left menu-list">
+						<li><a href="geaworld/hk/event/stu-register.html">學生登記</a></li>
+						<li><a href="geaworld/hk/event/guardian-register.html">家長登記</a></li>
+						
+					</ul>
+				</li>
+				<li class="menu infomenu">
+					<a href="javascript:;">
+						<i class="fa fa-bars"></i>
+						<span>展會資訊</span>
+					</a>
+					<ul class="menu-list menu-right">
+						<li><a href="#share">參加同學專享</a></li>
+						<li><a href="#college">大學資料</a></li>
+						<li><a href="#lecture">講座時間表</a></li>
+						<li><a href="#contactus">聯絡我們</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</footer>
 </body>
+<script type="text/javascript" src="/geaworld/geaGlobal/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/geaworld/geaGlobal/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".infomenu").on('click',function(){
+			$(".menu-right").slideToggle();
+			$(".menu-left").slideUp()
+		})
+		$(".loginmenu").on('click',function(){
+			$(".menu-left").slideToggle();
+			$(".menu-right").slideUp()
+		})
+	})
+</script>
 </html>
