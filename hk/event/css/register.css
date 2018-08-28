@@ -36,10 +36,14 @@ body,html{
 	padding:10px 15px;
 	color: #fff;
 }
-.regbox .infoform{
+.regbox .infoform .box{
 	padding:15px;
 	
 }
+/*.regbox .infoform{
+	padding:15px;
+	
+}*/
 .regbox .infoform .btnbox{
 	margin-top: 30px;
 }
