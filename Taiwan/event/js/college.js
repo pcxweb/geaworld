@@ -398,10 +398,7 @@ $(function(){
 		$(".menu-right").slideToggle();
 		$(".menu-left").slideUp()
 	})
-	$(".loginmenu").on('click',function(){
-		$(".menu-left").slideToggle();
-		$(".menu-right").slideUp()
-	})
+	
 	console.log(urlwen.name)
 	
 	var dataobj = college[urlwen.name]

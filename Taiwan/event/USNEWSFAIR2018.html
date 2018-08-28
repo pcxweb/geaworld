@@ -39,11 +39,6 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
 	<link rel="stylesheet" href="/geaworld/hk/event/css/event.css">
 	<link rel="stylesheet" href="/geaworld/hk/event/css/usnewsfair2.css">
-	<style>
-		#foot .menu .menu-left{
-			height: 35px;
-		}
-	</style>
 </head>
 <body>
 <div class="main">
@@ -200,14 +195,11 @@
 <footer>
 		<div id="foot">
 			<ul>
-				<li style="border-right: 1px solid #54abcc" class="menu loginmenu">
-					<a href="javascript:;">
+				<li style="border-right: 1px solid #54abcc">
+					<a href="stu-register.html">
 						<i class="fa fa-podcast"></i>
 						<span>展會登記</span>
 					</a>
-					<ul class="menu-left menu-list">
-						<li><a href="stu-register.html">學生登記</a></li>
-					</ul>
 				</li>
 				<li class="menu infomenu">
 					<a href="javascript:;">
@@ -233,10 +225,7 @@
 			$(".menu-right").slideToggle();
 			$(".menu-left").slideUp()
 		})
-		$(".loginmenu").on('click',function(){
-			$(".menu-left").slideToggle();
-			$(".menu-right").slideUp()
-		})
+		
 	})
 </script>
 </html>
