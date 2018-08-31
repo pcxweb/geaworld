@@ -1,0 +1,153 @@
+@font-face {  
+    font-family: '方正兰亭中黑';  
+    src:url('../fonts/fangzheng.TTF') format('truetype');  
+    font-weight: normal;  
+    font-style: normal;  
+}  
+@font-face {  
+    font-family: 'BuenosAires-Bold';  
+    src:url('../fonts/BuenosAires-Bold.otf') format('truetype');  
+    font-weight: normal;  
+    font-style: normal;  
+}  
+
+@font-face {  
+    font-family: 'BuenosAires-Light';  
+    src:url('../fonts/BuenosAires-Light.otf') format('truetype');  
+    font-weight: normal;  
+    font-style: normal;  
+}  
+
+@font-face {  
+    font-family: 'BuenosAires-Regular';  
+    src:url('../fonts/BuenosAires-Regular.otf') format('truetype');  
+    font-weight: normal;  
+    font-style: normal;  
+}  
+
+body{background-color: #fff;background-size: 100%;font-size: 62.5%}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:'Lato', sans-serif,'Passion One',"arial",'BuenosAires-Light' ,'Source Serif Pro', serif; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover,a:focus { text-decoration:none; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%;-webkit-tap-highlight-color: transparent;  }
+table { border-collapse:collapse; border-spacing:0; } 
+img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+.conents .title,.conents .desc{
+ 	text-align: center;
+}
+.conents .title{
+	color: #ff9800;
+	margin:3%;
+	font-family: 'BuenosAires-Bold';  
+}
+.conents .desc{
+	font-size: 16px;
+	line-height: 1.2;
+	margin-bottom: 20px;
+
+}
+.conents .desc h3{
+	font-weight: bold;
+}
+/*.panel-body{
+	font-family: 'Montserrat', sans-serif; 
+}*/
+/*轮播图*/
+	#about{
+		position: relative;
+	}
+	#about .about-title{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		font-size: 3em;
+	}
+	
+	#about-myCarousel .carousel-inner .item img{
+		width: 100%;
+	}
+	@media (max-width: 1024px) and (min-width: 768px){
+	  	/*#about .about-title{font-size:2em;width: 100%}*/
+		#about .about-title .video_bnrsub{margin: 5px; font-size: 0.8em;}
+	}
+	@media (max-width: 767px) {
+		#about .about-title{font-size: 20px;width: 100%}
+		#about .about-title .video_bnrsub{margin: 5px; font-size: 20px;}
+
+	}
+/*轮播图结束*/
+.Mtop50{
+	margin:50px auto;
+}
+/*左侧导航*/
+	.event-con-left{
+		width: 20%;
+		font-size: 16px;
+		color: #4a484c;
+		cursor: pointer;
+		margin-right: 10px;
+	}
+	.event-con-left  span{
+		padding-right: 10px;
+	}
+	.event-con-left  span.fa{
+		display: none;
+	}
+	.event-con-left h5{
+		font-size: 18px;
+		margin-left: -1.2em;
+		font-weight: bold;
+		border-top:1px solid #ccc;
+		padding-top: 8px;
+		color: #d85719;
+	}
+	.event-con-left h5.active{
+		color: #d85719;
+	}
+	.event-con-left  li.active{
+		color:#ff9800;
+	}
+	.event-con-left li{
+		width: 100%;
+		border-top:1px solid #ccc;
+		padding:10px;
+		font-size: 16px;
+		transition: all 0.3s linear
+	}
+	.event-con-left ul:last-child li:last-child{
+		border-bottom: 1px solid #ccc;
+	}
+	.event-con-left li .text{transition: all 0.3s linear}
+	.event-con-left li:hover {
+		background-color: #e5e2e0;
+	}
+	.event-con-left li:hover span.fa{
+		color: #000;
+	}
+	.event-con-left li:hover .text{
+		margin-left: 10px;
+		color: #000;
+		font-weight: bold;
+	}
+/*右侧内容*/
+	.event-con-right{
+		width: 80%;
+		padding-left: 10px;
+		border-left: 1px solid #ccc;
+	}
+

@@ -1,0 +1,219 @@
+
+
+/*顶部样式*/
+.main .top{
+	width: 100%;
+	background-image: url("../img/topbg.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	font-family: "bigblack";
+	background-color: #1c4472
+
+}
+.logotop{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 0.65rem;
+	padding-bottom: 1.05rem;
+	
+}
+.logotop .usenew{
+	padding-right: 0.1rem;
+	border-right: 1px solid rgba(255,255,255,.6);
+}
+.logotop .gea{
+	border-left: 1px solid rgba(255,255,255,.6);
+	padding-left: 0.1rem;
+}
+.logotop img{
+	height: 0.56rem;
+	width: auto;
+
+}
+.titletop{
+	color: #fff;
+	text-align: center;
+
+}
+.titletop p{
+	font-size: 0.2rem;
+}
+.titletop h2{
+	font-size: 0.5rem;
+	letter-spacing: 1.5px;
+}
+.titletop h3{
+	font-family: "middleblack";
+	font-size: 0.4rem;
+}
+.titletop h3{
+	margin-top: 0.59rem;
+	padding-bottom: 1.59rem;
+}
+/*中间内容样式*/
+.content{
+	width: 100%;
+	background-image: url("../img/centerbg.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-color: #1c4472
+}
+.content .contitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #54abcc;
+	font-family: "middleblack";
+}
+.content  .conitem{
+	margin:0 auto;
+	margin-bottom: 30px;
+	font-size: 0.3rem;
+}
+.content .contitle .txt{
+	font-size: 0.4rem;
+	font-family: "middleblack";
+}
+.content .contitle .line{
+	height: 3px;
+	width: 1.5rem;
+	margin:0 0.1rem;
+	background-color: #54abcc;
+	display: inline-block;
+	font-size: 0.3rem;
+}
+/*.content .base ul{
+	padding:10px;
+	color: #666;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #fff;
+	
+}*/
+
+.content .base ul{
+	color: #fff;
+	padding:10px;
+	font-family: "middleblack"
+}
+.content .base ul li{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	
+}
+.content .base ul li i{
+	width: 0.4rem;
+	text-align: center;
+	display: inline-block;
+	/*color: #1c4472;*/
+	margin-right: 0.1rem;
+}
+.content .base ul li a{
+	display: flex;
+	align-items: center;
+	/*color: #666;*/
+	color: #fff
+	
+}
+.content .base ul li a p{
+	text-decoration: underline;
+}
+/*.content .share ul li i{
+	font-size: 0.3rem;
+	font-family: "bigblack";
+	margin:0 3px;
+}*/
+.content .share ul li img{
+	width: 2.3rem;
+	background-color: #fff;
+	padding:0 3px;
+	border-radius: 0.235rem;
+	margin:0 5px;
+}
+.content .share ul li strong{
+	font-size: 0.4rem;
+	font-family: "bigblack";
+	color: #fff4d8;
+}
+.content .share .desc{
+	font-family: "normalfont";
+	font-size: 0.2rem;
+	text-align: center;
+}
+.content .college .collegedesc{
+	font-family: "normalfont";
+	margin-bottom: 20px;
+	font-size: 0.3rem;
+}
+.content .college .img{
+	text-align: center;
+}
+.content .college img{
+	width: 6.22rem;
+	max-width:800px;
+}
+.content .college ul{
+	margin-top: 20px;
+	font-size: 0.25rem;
+	font-family: "normalfont";
+	padding-left: 0;
+}
+.content .college ul li{
+	list-style: none;
+	margin-bottom: 8px;
+}
+.content .college ul li a{
+	color: #fff;
+}
+.content .college ul li a i{
+	margin-right: 0.2rem;
+	color: #b2daea;
+}
+.content .lecture ol li{
+	margin-bottom: 10px;
+}
+.content .lecture .conitem{
+	margin-bottom: 0px;
+}
+.content  .contactus{
+	width: 100%;
+	background-image: url("../img/bottombg.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	padding-top: 1.29rem;
+	padding-bottom: 20px;
+	background-color: #1c4472
+}
+.content .conitem{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.content  .contactus .conitem p{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.content  .contactus .conitem p a{
+	color: #fff;
+	text-decoration: underline;
+
+}
+.content  .contactus .conitem span{
+	display: inline-block;
+	width: 0.48rem;
+	height: 0.48rem;
+	text-align: center;
+	line-height: 0.48rem;
+	border-radius: 100%;
+	background-color: #fff;
+	color: #000;
+	margin-right: 0.1rem;
+}
+

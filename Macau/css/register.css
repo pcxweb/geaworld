@@ -1,0 +1,96 @@
+body,html{
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+}
+.regbox{
+	font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+	width: 100%;
+	min-height: 100%;
+	background-color: #b2daea;
+	position: relative;
+}
+.regbox .topbg{
+	height: 250px;
+	background-color: #1e4473;
+}
+.regbox .info{
+	width: 640px;
+	margin:auto;
+	background-color: #fff;
+	margin-top:-100px;
+}
+.regbox  h1{
+	text-align: center;
+	padding:30px 15px;
+	padding-bottom: 0px;
+	border-top:5px solid #b2daea;
+}
+.regbox .must-write{
+	padding:10px 15px;
+
+}
+.regbox .title{
+	background-color: #1e4473;
+	padding:10px 15px;
+	color: #fff;
+}
+.regbox .infoform .box{
+	padding:15px;
+	
+}
+/*.regbox .infoform .secondstep{
+	padding:15px;
+	
+}*/
+.regbox .infoform .btnbox{
+	margin-top: 30px;
+}
+.regbox .infoform .btnbox .btn{
+	margin-right: 20px;
+}
+.red{
+	color: red;
+}
+.regbox .desc{
+	margin-top: 15px;
+	font-size: 12px;
+}
+.secondstep{
+	display: none;
+}
+.footer{
+	height: 50px;
+}
+.secondstep .other{
+	border-bottom: 1px solid #ccc;
+	width: 350px;
+}
+.secondstep p.remark{
+	padding:0px 15px
+
+}
+.secondstep .checkbox{
+	margin-bottom: 15px;
+}
+.secondstep .checkbox label{
+	vertical-align: middle;
+}
+
+
+@media (max-width: 660px){
+	.regbox .info{
+		width: 90%;
+		margin-top:-50px;
+	}
+	.regbox .topbg{
+		height: 100px;
+	}
+	.regbox  h1{
+		font-size: 18px;
+	}
+	.secondstep .other{
+		width: 150px;
+	}
+}

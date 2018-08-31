@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>美國新聞國際教育博覽-澳門站</title>
+	<!-- 标题图标 -->
+    <link rel="icon" href="gea.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<div class="regbox">
+		<div class="topbg"></div>
+		<form class="infoform" action="action.jsp" method="post" id="firstform">
+		<div class="stureg info">
+			<h1>美國新聞國際教育博覽-澳門站</h1>
+			<p class="must-write red">*必填</p>
+			<div class="firststep">
+				<p class="title">家長資料</p>
+				
+				<div class="box">
+					<input type="hidden" name="type" value="1">
+					<input type="hidden" name="update" value="activit_register">
+
+
+					<div class="form-group">
+						<label for="enname">英文姓名 Name in English <span class="red">*</span></label>
+						<input type="text" class="form-control noempty" id="enname" name="name_en" placeholder="您的回答">
+					</div>
+					<div class="form-group">
+						<label for="zhname">中文姓名 Name in Chinese</label>
+						<input type="text" class="form-control" id="zhname" name="name_zh" placeholder="您的回答">
+					</div>
+					<div class="form-group">
+						<label for="phone">聯絡電話 Contact Phone Number <span class="red">*</span></label>
+						<input type="text" class="form-control noempty phone" id="phone" name="phone_number" placeholder="您的回答">
+					</div>
+					<div class="form-group">
+						<label for="email">電郵地址 Email Address <span class="red">*</span></label>
+						<input type="email" class="form-control noempty" id="email" name="email" placeholder="您的回答">
+					</div>
+					<div class="form-group">
+						<label for="schoolname">孩子就讀學校 School Name <span class="red">*</span></label>
+						<input type="text" class="form-control noempty" id="schoolname" name="school_name" placeholder="您的回答">
+					</div>
+					<div class="form-group">
+						<label for="grade">孩子就讀年級 Grade <span class="red">*</span></label>
+						<select name="grade" id="grade" class="form-control">
+							<option value="0">選擇</option>
+							<option value="1">s1</option>
+							<option value="2">s2</option>
+							<option value="3">s3</option>
+							<option value="4">s4</option>
+							<option value="5">s5</option>
+							<option value="6">s6</option>	
+						</select>
+					</div>
+
+					<p class="desc">*以上所收集的有關個人資料會作為本公司舉辦上述講座之用途（包括但不限於作核實出席人士身份、 預留座位及聯絡登記者核實資料作是次講座之安排），並不會作任何直銷之用。閣下提供的個人資料， 本公司將按收集目的所需的時間保存該等資料，直至所收集的個人資料已不再存有任何上述用途後， 本公司便會刪除或銷毀該等資料。 </p>
+
+					<div class="btnbox">
+						<button type="button" id="stepfirst" class="btn btn-primary">下一頁</button>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="secondstep">
+				<p class="title">希望參加的講座環節</p>
+				<p class="remark">可選擇多於一項</p>
+				<div class="box">
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" class="exhibition" value="1">
+				      1.關於美國新聞及其大學排名介紹
+				    </label>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" class="exhibition" value="2">
+				      2.TOEFL 考試及技巧介紹
+				    </label>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" class="exhibition" value="3">
+				      3.美國簽證介紹及注意事項
+				    </label>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" class="exhibition" value="4">
+				      4.到美國留學校友分享經驗點滴
+				    </label>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" class="exhibition" value="5">
+				      5.美國商會介紹畢業生在美國的出路
+				    </label>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" class="exhibition" value="6">
+				      不參加講座環節
+				    </label>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" class="exhibition" value="7">
+				      其他: <input class="other" type="text">
+				    </label>
+				  </div>
+				  <input type="hidden" id="exhibitionstr" name="exhibition" >
+				  <div class="btnbox">
+					  <!-- <button type="button" id="before" class="btn btn-primary">上一页</button> -->
+					  <button type="button" id="subBtn" class="btn btn-danger">提交</button>
+				  </div>
+				</div>
+
+			</div>
+		</div>
+		</form>
+		<div class="footer"></div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+</html>

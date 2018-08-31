@@ -1,0 +1,85 @@
+.main{
+	margin-bottom: 60px;
+}
+.base{
+	background-color: #1d4472;
+	color: #fff;
+	font-size: 0.28rem;
+	padding:0.3rem 0;
+}
+.base .title{
+	font-family: "bigblack";
+	text-align: center;
+}
+.base .title h3{
+	font-size: 0.5rem;
+	margin-top: 0.12rem;
+}
+.base .info{
+	margin-top: 0.2rem;
+	padding:0 0.2rem;
+	padding-top: 0.3rem;
+	border-top:1px #fff dashed;
+}
+.base .info p{
+	margin-bottom: 5px;
+}
+.base .info a{
+	color: #fff;
+}
+.con{
+	padding:0rem 0.2rem;
+}
+.con h5{
+	font-size: 0.3rem;
+	color: #1d4472;
+	font-family: "bigblack";
+	margin:0.3rem 0;
+}
+
+.con p{
+	font-size: 0.28rem;
+	text-indent: 2em;
+	color: #000;
+}
+
+.about .atitle{
+	background-color: #1d4472;
+	padding:0.1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.3rem;
+}
+.about .atitle .txt{
+	font-size: 0.4rem;
+	font-family: "middleblack";
+	color: #fff;
+}
+.about .atitle .line{
+	height: 3px;
+	width: 1rem;
+	margin:0 0.1rem;
+	background-color: #fff;
+	display: inline-block;
+	font-size: 0.3rem;
+}
+.about .con ul{
+	padding-left: 0;
+	color: #000;
+	font-size: 0.28rem;
+}
+.about .con ul li{
+	display: flex;
+	vertical-align: middle;
+}
+.about .con ul li span{
+	color: #f7931d;
+	margin-right: 0.1rem;
+	font-size: 0.1rem;
+	vertical-align: middle;
+	margin-top: 2px;
+}
+.about .con ul li p{
+	text-indent: 0;
+}
